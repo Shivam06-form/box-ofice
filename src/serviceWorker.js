@@ -1,3 +1,6 @@
+/* eslint-disable no-use-before-define */
+/* eslint-disable no-param-reassign */
+/* eslint-disable no-console */
 // This optional code is used to register a service worker.
 // register() is not called by default.
 
@@ -36,13 +39,11 @@ export function register(config) {
 
       if (isLocalhost) {
         // This is running on localhost. Let's check if a service worker still exists or not.
-        // eslint-disable-next-line no-use-before-define
         checkValidServiceWorker(swUrl, config);
 
         // Add some additional logging to localhost, pointing developers to the
         // service worker/PWA documentation.
         navigator.serviceWorker.ready.then(() => {
-          // eslint-disable-next-line no-console
           console.log(
             'This web app is being served cache-first by a service ' +
               'worker. To learn more, visit https://bit.ly/CRA-PWA'
@@ -50,7 +51,6 @@ export function register(config) {
         });
       } else {
         // Is not localhost. Just register service worker
-        // eslint-disable-next-line no-use-before-define
         registerValidSW(swUrl, config);
       }
     });
@@ -61,7 +61,6 @@ function registerValidSW(swUrl, config) {
   navigator.serviceWorker
     .register(swUrl)
     .then(registration => {
-      // eslint-disable-next-line no-param-reassign
       registration.onupdatefound = () => {
         const installingWorker = registration.installing;
         if (installingWorker == null) {
@@ -73,7 +72,6 @@ function registerValidSW(swUrl, config) {
               // At this point, the updated precached content has been fetched,
               // but the previous service worker will still serve the older
               // content until all client tabs are closed.
-              // eslint-disable-next-line no-console
               console.log(
                 'New content is available and will be used when all ' +
                   'tabs for this page are closed. See https://bit.ly/CRA-PWA.'
@@ -87,7 +85,6 @@ function registerValidSW(swUrl, config) {
               // At this point, everything has been precached.
               // It's the perfect time to display a
               // "Content is cached for offline use." message.
-              // eslint-disable-next-line no-console
               console.log('Content is cached for offline use.');
 
               // Execute callback
@@ -100,7 +97,6 @@ function registerValidSW(swUrl, config) {
       };
     })
     .catch(error => {
-      // eslint-disable-next-line no-console
       console.error('Error during service worker registration:', error);
     });
 }
@@ -129,7 +125,6 @@ function checkValidServiceWorker(swUrl, config) {
       }
     })
     .catch(() => {
-      // eslint-disable-next-line no-console
       console.log(
         'No internet connection found. App is running in offline mode.'
       );
@@ -143,7 +138,6 @@ export function unregister() {
         registration.unregister();
       })
       .catch(error => {
-        // eslint-disable-next-line no-console
         console.error(error.message);
       });
   }

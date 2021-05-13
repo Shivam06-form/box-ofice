@@ -1,13 +1,11 @@
-/* eslint-disable no-console */
+/* eslint-disable no-underscore-dangle */
 import React, { useEffect, useReducer } from 'react';
 import { useParams } from 'react-router-dom';
-import Cast from '../show/Cast';
-import Detial from '../show/Detial';
-import Seasons from '../show/Seasons';
-
-
-import ShowMainData from '../show/ShowMainData';
-import { apiGet } from './misc/config';
+import { apiGet } from '../misc/config';
+import ShowMainData from '../components/show/ShowMainData';
+import Details from '../components/show/Details';
+import Seasons from '../components/show/Seasons';
+import Cast from '../components/show/Cast';
 
 const reducer = (prevState, action) => {
   switch (action.type) {
@@ -58,8 +56,6 @@ const Show = () => {
     };
   }, [id]);
 
-  console.log('show', show);
-
   if (isLoading) {
     return <div>Data is being loaded</div>;
   }
@@ -68,36 +64,36 @@ const Show = () => {
     return <div>Error occured: {error}</div>;
   }
 
-  return<div>
-     <ShowMainData 
-     image={show.image} 
-     name={show.name} 
-     rating={show.rating}
-      summary={show.summary} 
-      tags={show.genres} />
-
-     <div>
-    <h2>Details</h2> 
-    <Detial status={show.status} network={show.network}
-     premiered={show.premiered}  />  
-    </div> 
-
+  return (
     <div>
-    <h2>Seasons</h2> 
-    <Seasons seasons={show.embedded.seasons}/>  
-    </div> 
+      <ShowMainData
+        image={show.image}
+        name={show.name}
+        rating={show.rating}
+        summary={show.summary}
+        tags={show.genres}
+      />
 
-    <div>
-    <h2>Cast</h2> 
-    <Cast cast={show.embedded.cast}/>  
-    </div> 
-   
-   </div>;
+      <div>
+        <h2>Details</h2>
+        <Details
+          status={show.status}
+          network={show.network}
+          premiered={show.premiered}
+        />
+      </div>
 
-  
+      <div>
+        <h2>Seasons</h2>
+        <Seasons seasons={show._embedded.seasons} />
+      </div>
+
+      <div>
+        <h2>Cast</h2>
+        <Cast cast={show._embedded.cast} />
+      </div>
+    </div>
+  );
 };
 
 export default Show;
-
-
-
