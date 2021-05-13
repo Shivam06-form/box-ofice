@@ -5,8 +5,10 @@
 import { render } from '@testing-library/react';
 import React,{useState} from 'react';
 import { createRenderer } from 'react-dom/test-utils';
+import ActorGrid from '../actor/ActorGrid';
 import MainPageLayout from '../MainPageLayout';
-import{apiGet} from '../misc/config'; 
+import ShowGrid from '../show/ShowGrid';
+import{apiGet} from './misc/config'; 
 
 
 
@@ -43,11 +45,12 @@ const Home = () => {
     }
 
     if (results && results.length > 0) {
-      return results[0].show
-        ? results.map(item => <div key={item.show.id}>{item.show.name}</div>)
-        : results.map(item => (
-            <div key={item.person.id}>{item.person.name}</div>
-          ));
+      return results[0].show ? (
+        <ShowGrid data={results} /> 
+        )  : (
+      
+      <ActorGrid data={results}/>            
+      );   
     }
 
     return null;
