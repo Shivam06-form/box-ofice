@@ -3,7 +3,7 @@ import React from "react";
 import {Switch , Route } from 'react-router-dom';
 
 import Home from "./components/pages/Home";
-import Show from "./components/pages/show";
+import Show from "./components/pages/Show";
 import Starred from "./components/pages/Starred";
 
 function App() {
