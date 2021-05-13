@@ -3,7 +3,7 @@
 /* eslint-disable no-unused-vars */
 
 import { render } from '@testing-library/react';
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import { createRenderer } from 'react-dom/test-utils';
 import ActorGrid from '../actor/ActorGrid';
 import MainPageLayout from '../MainPageLayout';
