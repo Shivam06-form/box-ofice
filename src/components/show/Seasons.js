@@ -1,5 +1,5 @@
 import React from 'react';
-import { SeasonList, SeasonsWrapper } from './Seasons.styled';
+import { SeasonsWrapper, SeasonList } from './Seasons.styled';
 
 const Seasons = ({ seasons }) => {
   return (
@@ -15,7 +15,7 @@ const Seasons = ({ seasons }) => {
       </p>
       <SeasonList>
         {seasons.map(season => (
-          <div key={season.id}  className="season-item">
+          <div key={season.id} className="season-item">
             <div className="left">
               <p>Season {season.number}</p>
               <p>

@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const MainDataWrapper = styled.div`
   display: flex;
@@ -53,11 +53,11 @@ export const Headline = styled.div`
     }
   }
 `;
+
 export const TagList = styled.div`
   display: inline-flex;
   flex-wrap: wrap;
 
-  
   span {
     margin: 6px;
     margin-bottom: 0;
