@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/box-ofice%20/static/css/main.93052401.chunk.css",
-    "main.js": "/box-ofice%20/static/js/main.379d0b3f.chunk.js",
-    "main.js.map": "/box-ofice%20/static/js/main.379d0b3f.chunk.js.map",
+    "main.js": "/box-ofice%20/static/js/main.e633727a.chunk.js",
+    "main.js.map": "/box-ofice%20/static/js/main.e633727a.chunk.js.map",
     "runtime-main.js": "/box-ofice%20/static/js/runtime-main.4cee4e37.js",
     "runtime-main.js.map": "/box-ofice%20/static/js/runtime-main.4cee4e37.js.map",
     "static/js/2.55389839.chunk.js": "/box-ofice%20/static/js/2.55389839.chunk.js",
     "static/js/2.55389839.chunk.js.map": "/box-ofice%20/static/js/2.55389839.chunk.js.map",
     "index.html": "/box-ofice%20/index.html",
-    "precache-manifest.ec4341fb7c736793265d3e1eadbbb581.js": "/box-ofice%20/precache-manifest.ec4341fb7c736793265d3e1eadbbb581.js",
+    "precache-manifest.aa63aae8750e199cb94a4636956eb1ce.js": "/box-ofice%20/precache-manifest.aa63aae8750e199cb94a4636956eb1ce.js",
     "service-worker.js": "/box-ofice%20/service-worker.js",
     "static/css/main.93052401.chunk.css.map": "/box-ofice%20/static/css/main.93052401.chunk.css.map",
     "static/js/2.55389839.chunk.js.LICENSE.txt": "/box-ofice%20/static/js/2.55389839.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.4cee4e37.js",
     "static/js/2.55389839.chunk.js",
     "static/css/main.93052401.chunk.css",
-    "static/js/main.379d0b3f.chunk.js"
+    "static/js/main.e633727a.chunk.js"
   ]
 }
