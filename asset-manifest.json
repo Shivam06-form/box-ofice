@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/box-ofice/static/css/main.93052401.chunk.css",
-    "main.js": "/box-ofice/static/js/main.3d7fe59a.chunk.js",
-    "main.js.map": "/box-ofice/static/js/main.3d7fe59a.chunk.js.map",
+    "main.js": "/box-ofice/static/js/main.ca367131.chunk.js",
+    "main.js.map": "/box-ofice/static/js/main.ca367131.chunk.js.map",
     "runtime-main.js": "/box-ofice/static/js/runtime-main.daac6b79.js",
     "runtime-main.js.map": "/box-ofice/static/js/runtime-main.daac6b79.js.map",
-    "static/js/2.f2fbf278.chunk.js": "/box-ofice/static/js/2.f2fbf278.chunk.js",
-    "static/js/2.f2fbf278.chunk.js.map": "/box-ofice/static/js/2.f2fbf278.chunk.js.map",
+    "static/js/2.74b85774.chunk.js": "/box-ofice/static/js/2.74b85774.chunk.js",
+    "static/js/2.74b85774.chunk.js.map": "/box-ofice/static/js/2.74b85774.chunk.js.map",
     "index.html": "/box-ofice/index.html",
-    "precache-manifest.402951569bcb18ae11ef416cab0d4093.js": "/box-ofice/precache-manifest.402951569bcb18ae11ef416cab0d4093.js",
+    "precache-manifest.be83ca065de9c2b9f4a661a67445bd3d.js": "/box-ofice/precache-manifest.be83ca065de9c2b9f4a661a67445bd3d.js",
     "service-worker.js": "/box-ofice/service-worker.js",
     "static/css/main.93052401.chunk.css.map": "/box-ofice/static/css/main.93052401.chunk.css.map",
-    "static/js/2.f2fbf278.chunk.js.LICENSE.txt": "/box-ofice/static/js/2.f2fbf278.chunk.js.LICENSE.txt"
+    "static/js/2.74b85774.chunk.js.LICENSE.txt": "/box-ofice/static/js/2.74b85774.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.daac6b79.js",
-    "static/js/2.f2fbf278.chunk.js",
+    "static/js/2.74b85774.chunk.js",
     "static/css/main.93052401.chunk.css",
-    "static/js/main.3d7fe59a.chunk.js"
+    "static/js/main.ca367131.chunk.js"
   ]
 }
